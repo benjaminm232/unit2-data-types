@@ -13,7 +13,7 @@ total_bill = bill + tip_amount
 print(total_bill)
  """
 
-""" print("Welcome to tip calculator")
+print("Welcome to tip calculator")
 bill = float(input("How much was your bill? $"))
 service = input("How was your service: Bad, Okay, Good, Great? ")
 if service == "bad":
@@ -34,11 +34,11 @@ elif service == "Good":
 elif service == "Great":
     total = bill * 1.20
 else:
-    print(Invalid option entered, defaulting to no tip.)
+    print("Invalid option entered, defaulting to no tip.")
     total = bill * 1.00
-print(f"Your total is: ${total:.2f}") """
+print(f"Your total is: ${total:.2f}")
 
-x = input("Write a sentence: ")
+""" x = input("Write a sentence: ")
 y = x.split( )
 z = len(y)
-print(f"This sentence has {z} words.")
+print(f"This sentence has {z} words.") """
