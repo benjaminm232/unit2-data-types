@@ -43,9 +43,11 @@ y = x.split( )
 z = len(y)
 print(f"This sentence has {z} words.") """
 
-def spaces(N,Y,T):
+""" def spaces(N,Y,T):
     B = 0
     for i in range(N):
-        if Y[i] == 'C' and T[i] == 'C':
-        B += 1
-print(B)
+        if Y[i] == "C" and T[i] == "C":
+           B += 1
+    print(B)
+spaces(5, "CC..C", ".CC..") """
+
