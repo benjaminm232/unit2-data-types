@@ -6,12 +6,19 @@ print(values)
 for i in values:
     print(i) """
 
-""" bill = float(input("How much was your bill?: $"))
-tip_percent = float(input("What percentage tip would you like to give?: "))
-tip_amount = bill * (tip_percent/100)
-total_bill = bill + tip_amount 
-print(total_bill)
- """
+""" x = input("Write a sentence: ")
+y = x.split( )
+z = len(y)
+print(f"This sentence has {z} words.") """
+
+""" def check(number):
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+e = int(input("Enter a whole number: "))
+result = check(e)
+print(f"The number {e} is {result}.") """
 
 """ print("Welcome to tip calculator")
 bill = float(input("How much was your bill? $"))
@@ -19,29 +26,24 @@ service = input("How was your service: Bad, Okay, Good, Great? ")
 if service == "bad":
     total = bill * 1.00
 elif service == "okay":
-    total = bill * 1.05
+    total = bill * 1.15
 elif service == "good":
-    total = bill * 1.10
-elif service == "great":
     total = bill * 1.20
+elif service == "great":
+    total = bill * 1.25
 # now this part is so the tip calculator will also work if they type in caps
 elif service == "Bad":
     total = bill * 1.00
 elif service == "Okay":
-    total = bill * 1.05
+    total = bill * 1.15
 elif service == "Good":
-    total = bill * 1.10
-elif service == "Great":
     total = bill * 1.20
+elif service == "Great":
+    total = bill * 1.25
 else:
     print("Invalid option entered, defaulting to no tip.")
     total = bill * 1.00
 print(f"Your total is: ${total:.2f}") """
-
-""" x = input("Write a sentence: ")
-y = x.split( )
-z = len(y)
-print(f"This sentence has {z} words.") """
 
 """ def spaces(N,Y,T):
     B = 0
@@ -51,3 +53,15 @@ print(f"This sentence has {z} words.") """
     print(B)
 spaces(5, "CC..C", ".CC..") """
 
+# Create a function that accepts an input and determines all factors of the number.
+def f(number):
+    i = int(input("Enter an integer: "))
+    ...
+
+f(i)
+
+""" import math 
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+gcf = math.gcd(a, b)
+print(f"The GCF of {a} and {b} is: {gcf}") """
