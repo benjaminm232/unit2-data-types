@@ -53,15 +53,32 @@ print(f"Your total is: ${total:.2f}") """
     print(B)
 spaces(5, "CC..C", ".CC..") """
 
-# Create a function that accepts an input and determines all factors of the number.
+""" # Create a function that accepts an input and determines all factors of the number.
 def f(number):
     i = int(input("Enter an integer: "))
     ...
 
-f(i)
+f(i) """
 
 """ import math 
 a = int(input("Enter the first number: "))
 b = int(input("Enter the second number: "))
 gcf = math.gcd(a, b)
 print(f"The GCF of {a} and {b} is: {gcf}") """
+
+""" def wizards(N,start,duels):
+    owner = start
+    num_owners= 1
+    for i in range(N):
+        if duels[i][1] == owner:
+            owner = duels[i][0]
+            num_owners += 1
+    print(owner)
+    print(num_owners)
+
+wizards(3, "A", ["BA", "CB", "DA"]) """
+
+code = "awesome sauce"
+project = ZeroDivisionError
+grade = 100
+print("Wow you got 100 very good code!")
