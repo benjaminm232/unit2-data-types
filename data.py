@@ -31,7 +31,7 @@ elif service == "good":
     total = bill * 1.20
 elif service == "great":
     total = bill * 1.25
-# now this part is so the tip calculator will also work if they type in caps
+# this part is so the tip calculator will also work if they type in caps
 elif service == "Bad":
     total = bill * 1.00
 elif service == "Okay":
@@ -60,11 +60,12 @@ def f(number):
 
 f(i) """
 
-""" import math 
-a = int(input("Enter the first number: "))
-b = int(input("Enter the second number: "))
-gcf = math.gcd(a, b)
-print(f"The GCF of {a} and {b} is: {gcf}") """
+def find_gcf(a,b):
+    a = int(input("Enter the first number: "))
+    b = int(input("Enter the second number: "))
+    while b != 0:
+        a, b = b, a % b
+    return a
 
 """ def wizards(N,start,duels):
     owner = start
@@ -78,7 +79,3 @@ print(f"The GCF of {a} and {b} is: {gcf}") """
 
 wizards(3, "A", ["BA", "CB", "DA"]) """
 
-code = "awesome sauce"
-project = ZeroDivisionError
-grade = 100
-print("Wow you got 100 very good code!")
